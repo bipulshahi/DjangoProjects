@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href = "{% static 'css/style.css'%}"/>
+<title>{{title}}</title>
+</head>
+    <body>   
+          <h2>Satrt Learning {{cname}}</h2>
+          <img src = "{% static 'images/newimg.jpg' %}" alt="City" />
+          <img src = "{% get_static_prefix %}images/newimg.jpg" alt = "Django"/>
+    
+    <form action="">
+        <input type="button" value = "Click Here" onclick="disp()" />
+    </form>
+        <script src = "{% static 'js/all.js' %}"></script>
+    
+    
+    
+    
+        </body>
+
+</html>
